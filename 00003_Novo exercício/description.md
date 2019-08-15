@@ -1,7 +1,7 @@
 Nós já definimos uma matriz de músicas com o seguinte formato:
 
 ``` javascript
-var songs = [
+var musicas = [
    {
      id: 1,
      nome: "Radio Ga Ga",
