@@ -1,0 +1,13 @@
+describe("Exercício 2", function() {
+	it("Operar Array", function() {
+	  assert(typeof suma !== "undefined", "Falta a variável soma...")
+	  
+	  assert(suma === somatorio(miArray), "A variável soma não tem o resultado esperado")
+	  
+	  assert(typeof mult !== "undefined", "Falta a variável mult...")
+	  
+	  assert(mult === produto(miArray), "A variável mult não tem o resultado esperado")
+	  
+	  assert(pasePorOperar, "Você chamou a função operarArray?")
+	})
+  })

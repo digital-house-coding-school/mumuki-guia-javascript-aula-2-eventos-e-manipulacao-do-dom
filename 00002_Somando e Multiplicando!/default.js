@@ -1,0 +1,1 @@
+var meuArray = [5, 5, 6];
