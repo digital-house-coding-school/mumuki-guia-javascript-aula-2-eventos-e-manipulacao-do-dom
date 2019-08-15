@@ -19,3 +19,7 @@ var musicas = [
 O que nós queremos, como resultado, é uma nova matriz chamada 'títulos' que tem apenas os nomes das músicas.
 
 Embora existam muitas maneiras de resolvê-lo, é uma excelente momento para se exercitar na função `map` :wink:
+
+Desconsidere eventualmente a mensagem: ``Sua solução funcionou, mas há coisas para melhorar
+Objetivos que não foram atendidos:
+ titulos possui lambdas desnecessários``
