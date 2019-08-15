@@ -1,0 +1,17 @@
+describe("Exercício 1", function() {
+	it("Operar Array", function() {
+	  assert(typeof operarArray === "function", "A função operarArray não existe")
+	  
+	  assert(operarArray.length === 2, "A função operarArray deve receber dois argumentos")
+  
+	  var resul = operarArray([10, 20, 30], somatoria)
+	  
+	  assert(typeof resul === "number", "A função operarArray não está retornando o tipo de dado apropriado. Verifique se está utilizando return. Verifique também se está usando a operação dada.");
+	  
+	  assert(resul === 60, "A função operarArray não está retornando o esperado. Você está usando a operação dada?")
+	  
+	  resul = operarArray([5,5,6], produto)
+	  
+	  assert(resul === 150, "A função operarArray não está retornando o esperado. Verifique se você está usando a operação dada.")
+	})
+  })
