@@ -1,0 +1,11 @@
+describe("Exercício 3", function() {
+	it("Títulos", function() {
+		assert(typeof titulos !== "undefined", "A variável titulos não está definida.")
+	  
+		assert(Array.isArray(titulos), "A variável títulos deve ser um array")
+	  
+		assert(titulos.length === 3, "A variável titulos não tem a quantidade correta de elementos")
+	  
+		assert(titulos.shift() === "Radio Ga Ga" && titulos.shift() === "Birds" && titulos.shift() == "Believer", "A variável títulos não tem os valores corretos")
+	})
+})
