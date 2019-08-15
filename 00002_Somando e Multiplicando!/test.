@@ -2,7 +2,7 @@ describe("Exercício 2", function() {
 	it("Operar Array", function() {
 	  assert(typeof soma !== "undefined", "Falta a variável soma...")
 	  
-	  assert(soma === somatorio(miArray), "A variável soma não tem o resultado esperado")
+	  assert(soma === somatorio(meuArray), "A variável soma não tem o resultado esperado")
 	  
 	  assert(typeof mult !== "undefined", "Falta a variável mult...")
 	  
