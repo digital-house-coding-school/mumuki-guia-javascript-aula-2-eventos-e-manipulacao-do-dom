@@ -6,7 +6,7 @@ describe("Exercício 2", function() {
 	  
 	  assert(typeof mult !== "undefined", "Falta a variável mult...")
 	  
-	  assert(mult === produto(miArray), "A variável mult não tem o resultado esperado")
+	  assert(mult === produto(meuArray), "A variável mult não tem o resultado esperado")
 	  
 	  assert(pasePorOperar, "Você chamou a função operarArray?")
 	})
