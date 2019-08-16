@@ -1,1 +1,9 @@
-d
+describe("Exercício 5", function() {
+	it("Radio Ga Ga", function() {
+	  assert(typeof radioGaGa !== "undefined", "No esta definida la variable radioGaGa")
+	  
+	  assert(typeof radioGaGa === "object", "A variável radioGaGa deve ser um objeto literal")
+	  
+	  assert(radioGaGa.nome === "Radio Ga Ga", "Você encontrou a música Radio Ga Ga ou existe alguma outra coisa?")
+	})
+  })
