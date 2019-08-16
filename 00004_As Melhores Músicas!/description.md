@@ -11,7 +11,7 @@ var songs = [
 {
      id: 2,
      nome: "Birds",
-     Pontuação: 7.8
+     pontuacao: 7.8
    }
 ]
 ```
