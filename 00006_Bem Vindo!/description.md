@@ -1,6 +1,6 @@
 Nossa página tem um elemento `h1` que simplesmente diz "Welcome". Vamos modificá-lo para saudar o usuário atual.
 
-Para isso pedimos que:
+Para isso pedimos que: 
 
 > 1. Através do método `prompt`, peça ao usuário que digite o seu nome
 
