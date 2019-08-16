@@ -17,6 +17,6 @@ var songs = [
 ```
 
 
-O que nós queremos, como resultado, é uma nova matriz chamada `the Best` que tem apenas os elementos da matriz com uma pontuação maior que 8.
+O que nós queremos, como resultado, é uma nova matriz chamada `asMelhores` que tem apenas os elementos da matriz com uma pontuação maior que 8.
 
 Embora existam muitas maneiras de resolvê-lo, é uma excelente instância para se exercitar na função `filter` :wink:
