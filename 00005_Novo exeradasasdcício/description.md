@@ -1,17 +1,17 @@
 Mais uma vez a variável `songs` aparece com a seguinte estrutura:
 
 ``` javascript
-let songs = [ 
-   {
-     id: 1,
-     nome: "Manuelita",
-     pontuacao: 8,5
-   },
-   {
-     id: 2,
-     nome: "A rainha da batata-doce",
-     pontuacao: 7,8
-   }
+let musicas = [
+	{
+		id: 1,
+		nome: "Believer",
+		pontuacao: 8.5
+	},
+	{
+		id: 2,
+		nome: "Birds",
+		pontuacao: 7.8
+	}
 ]
 ```
 
