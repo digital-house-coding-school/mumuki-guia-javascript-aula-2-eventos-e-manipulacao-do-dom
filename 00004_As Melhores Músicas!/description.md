@@ -1,7 +1,7 @@
 Mais uma vez a variável `musicas` aparece com a seguinte estrutura:
 
 ``` javascript
-var musicas = [
+let musicas = [
 	{
 		id: 1,
 		nome: "Believer",
