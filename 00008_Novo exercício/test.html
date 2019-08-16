@@ -1,0 +1,73 @@
+/*<output#*//*#output>*/
+/*<tests#*/it("Saludar Dario", function() {
+  
+  document.querySelector("h1").classList = {
+    items: [],
+    add: function(item)  {
+      this.items.push(item)
+    },
+    contains: function(item) {
+      return this.items.indexOf(item) !== -1
+    },
+    toggle: function(item) {
+      if (this.contains(item)) {
+        this.remove(item)
+      } else {
+        this.add(item)
+      }
+    },
+    remove: function(item) {
+      index = this.items.indexOf(item)
+      
+      if (index >= 0) {
+        this.items.splice(index,1)
+      }
+    },
+    clean: function() {
+      this.items = []
+    }
+  }
+  
+  _prompt_response_ = "Dario"
+  _confirm_response_ = true
+  
+  _dispatch_('load', document);
+  
+  var hayUltimoPrompt = _last_prompt_message_ !== null
+  
+  true.should.eql(hayUltimoPrompt, "<b><u>Você chamou a função prompt?</u></b>")
+  
+  document.querySelector("h1").innerHTML.should.be.eql('Welcome ' + _prompt_response_); 
+  
+  var hayUltimoConfirm = _last_confirm_message_ !== null
+  
+  true.should.eql(hayUltimoConfirm, "<b><u>Você chamou a função prompt?</u></b>")
+  
+  document.querySelector("h1").classList.contains("xl").should.be.eql(true, "Se o usuário responde que sim, o h1 deveria receber a classe xl")
+});
+
+it("Saludar Ale", function() {
+  
+  document.querySelector("h1").classList.clean()
+  
+  _prompt_response_ = "Ale"
+  _confirm_response_ = false
+  
+  _dispatch_('load', document);
+  
+  var hayUltimoPrompt = _last_prompt_message_ !== null
+  
+  true.should.eql(hayUltimoPrompt, "<b><u>Você chamou a função prompt?</u></b>")
+  
+  document.querySelector("h1").innerHTML.should.be.eql('Wellcome ' + _prompt_response_);  
+  
+  var hayUltimoConfirm = _last_confirm_message_ !== null
+  
+  true.should.eql(hayUltimoConfirm, "<b><u>Você chamou a função prompt?</u></b>")
+  
+  
+  document.querySelector("h1").classList.contains("xl").should.be.eql(false, "Se o usuário responde que sim, o h1 deveria receber a classe xl")
+});
+/*#tests>*/
+/*<options#*/output_ignore_scripts: true
+output_ignore_styles: true/*#options>*/
