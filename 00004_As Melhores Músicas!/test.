@@ -1,0 +1,11 @@
+describe("Exercício 4", function() {
+	it("As Melhores", function() {
+		assert(typeof asMelhores !== "undefined", "A variável asMelhores não está definida.")
+		
+		assert(Array.isArray(asMelhores), "A variável asMelhores deve ser um array")
+		
+		assert(asMelhores.length === 2, "A variável asMelhores não tem a quantidade correta de elementos.")
+		
+		assert(asMelhores.shift().nombre === "Radio Ga Ga" && asMelhores.shift().nombre === "Birds", "A variável asMelhores não tem os valores corretos");
+	})
+})
