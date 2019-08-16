@@ -4,7 +4,7 @@ Mais uma vez a variável `songs` aparece com a seguinte estrutura:
 let musicas = [
 	{
 		id: 1,
-		nome: "Believer",
+		nome: "Radio Ga Ga",
 		pontuacao: 8.5
 	},
 	{
@@ -16,6 +16,6 @@ let musicas = [
 ```
 
 
-O que nós queremos, como resultado, é uma variável chamada "rainha" que tem apenas o elemento cujo nome é "A rainha da batata-doce".
+O que nós queremos como resultado, é uma variável chamada "radioDaGa" que tem apenas o elemento cujo nome é "Radio Ga Ga".
 
-Embora existam muitas maneiras de resolvê-lo, é uma excelente instância para se exercitar na função `find`: wink:
+Embora existam muitas maneiras de resolvê-lo, é uma excelente instância para se exercitar na função `find` :wink:
