@@ -16,6 +16,6 @@ let musicas = [
 ```
 
 
-O que nós queremos como resultado, é uma variável chamada "radioGaGa" que tem apenas o elemento cujo nome é "Radio Ga Ga".
+O que nós queremos como resultado é uma variável chamada "radioGaGa" que tenha apenas o elemento cujo nome é "Radio Ga Ga".
 
 Embora existam muitas maneiras de resolvê-lo, é uma excelente instância para se exercitar na função `find` :wink:
