@@ -1,0 +1,42 @@
+/*<output#*//*#output>*/
+/*<tests#*/it("Teste series 1", function() {
+  _prompt_response_ = "Simpsons,GOT,Westworld"
+  
+  _dispatch_('load', document);
+  
+  var hayUltimoPrompt = _last_prompt_message_ !== null
+  
+  true.should.eql(hayUltimoPrompt, "<b><u>Você chamou a função prompt?</u></b>")
+  
+  var lis = document.querySelectorAll("ul li")
+  
+  lis.length.should.eql(3, "Não está gerando a quantidade de elementos li correta.")
+  
+  lis[0].innerHTML.should.eql("Simpsons", "O primeiro li não tem o conteúdo correto.")
+  
+  lis[1].innerHTML.should.eql("GOT", "O segundo elemento não tem o conteúdo correto.")
+  
+  lis[2].innerHTML.should.eql("Westworld", "O terceiro li não tem o conteúdo correto.")
+});
+
+it("Teste series 2", function() {
+  _prompt_response_ = "Friends,HIMYM"
+  
+  document.querySelector("ul").innerHTML = ""
+  
+  _dispatch_('load', document);
+  
+  var hayUltimoPrompt = _last_prompt_message_ !== null
+  
+  true.should.eql(hayUltimoPrompt, "<b><u>Você chamou a função prompt?</u></b>")
+  
+  var lis = document.querySelectorAll("ul li")
+  
+  lis.length.should.eql(2, "Você não está gerando a quantidade correta de elementos li")
+  
+  lis[0].innerHTML.should.eql("Friends", "O primeiro li não tem o conteúdo correto.")
+  
+  lis[1].innerHTML.should.eql("HIMYM", "O segundo li não tem o conteúdo correto.")
+});/*#tests>*/
+/*<options#*/output_ignore_scripts: true
+output_ignore_styles: true/*#options>*/
