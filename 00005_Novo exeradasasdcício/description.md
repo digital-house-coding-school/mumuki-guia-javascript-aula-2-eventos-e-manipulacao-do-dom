@@ -1,4 +1,4 @@
-Mais uma vez a variável `songs` aparece com a seguinte estrutura:
+Mais uma vez a variável `musicas` aparece com a seguinte estrutura:
 
 ``` javascript
 let musicas = [
