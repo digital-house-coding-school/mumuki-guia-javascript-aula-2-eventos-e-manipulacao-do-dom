@@ -1,16 +1,9 @@
-Mais uma vez a variável `musicas` aparece com a seguinte estrutura:
+Nossa página tem um elemento `h1` que simplesmente diz "Welcome ". Vamos modificá-lo para saudar o usuário atual.
 
-``` javascript
-let musicas = [
-	{
-		id: 1,
-		nome: "Radio Ga Ga",
-		pontuacao: 8.5
-	},
-	{
-		id: 2,
-		nome: "Birds",
-		pontuacao: 7.8
-	}
-]
-```
+Para isso pedimos que:
+
+> 1. Através do método `prompt`, peça ao usuário que digite o seu nome
+
+> 2. Selecione o `h1` e adicione o texto "Welcome USER " via `innerHTML` onde USER será substituído pelo texto digitado no `prompt`
+
+Sucessos!
