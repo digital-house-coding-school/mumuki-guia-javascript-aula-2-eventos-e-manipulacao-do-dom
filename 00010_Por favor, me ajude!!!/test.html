@@ -1,0 +1,16 @@
+/*<output#*//*#output>*/
+/*<tests#*/it("Over", function() {
+  _dispatch_('load', document);
+  
+  _dispatch_("mouseover", document.querySelector("button"))
+  
+  document.querySelector("p").style.display.should.eql("block", "O parágrafo deveria estar sendo exibido quando o mouse passa por cima do botão.")
+});
+
+it("Out", function() {
+  _dispatch_("mouseout", document.querySelector("button"))
+  
+  document.querySelector("p").style.display.should.eql("none", "O parágrafo deveria ser escondido (style.display='none') quando o mouse sai de cima do botão.")
+});/*#tests>*/
+/*<options#*/output_ignore_scripts: true
+output_ignore_styles: true/*#options>*/
