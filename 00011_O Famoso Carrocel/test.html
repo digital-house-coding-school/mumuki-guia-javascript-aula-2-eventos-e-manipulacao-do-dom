@@ -8,15 +8,15 @@
   
   _dispatch_("click", document.querySelector("button#proximo"))
   
-  document.querySelector("img").getAttribute("src").should.eql("https://vmdtoday.s3.amazonaws.com/_media/_image/Kitten-USDA-Investigation_Thumb.jpg", "Ao clicar no próximo na imagem 2, a imagem 3 deveria carregar")
+  document.querySelector("img").getAttribute("src").should.eql("https://vmdtoday.s3.amazonaws.com/_media/_image/Kitten-USDA-Investigation_Thumb.jpg", "Ao clicar no botão 'próximo' na imagem 2, a imagem 3 deveria ser carregada")
   
   _dispatch_("click", document.querySelector("button#anterior"))
   
-  document.querySelector("img").getAttribute("src").should.eql("http://lifeisbetterrescue.org/images/large/kittens.jpg", "Ao clicar no botão anterior na imagem número 2, deveria carregar a imagen número 1")
+  document.querySelector("img").getAttribute("src").should.eql("http://lifeisbetterrescue.org/images/large/kittens.jpg", "Ao clicar no botão 'anterior'  na imagem número 2, deveria carregar a imagen número 1")
   
   _dispatch_("click", document.querySelector("button#siguiente"))
   
-  document.querySelector("img").getAttribute("src").should.eql("https://vmdtoday.s3.amazonaws.com/_media/_image/Kitten-USDA-Investigation_Thumb.jpg", "Ao clicar no próximo na imagem 2, a imagem 3 deveria carregar")
+  document.querySelector("img").getAttribute("src").should.eql("https://vmdtoday.s3.amazonaws.com/_media/_image/Kitten-USDA-Investigation_Thumb.jpg", "Ao clicar no botão 'próximo' na imagem 2, a imagem 3 deveria carregar")
   
   _dispatch_("click", document.querySelector("button#siguiente"))
   
@@ -24,7 +24,7 @@
   
   _dispatch_("click", document.querySelector("button#siguiente"))
   
-  document.querySelector("img").getAttribute("src").should.eql("https://images.agoramedia.com/everydayhealth/cms/looking-at-cute-pics-helps-you-work-article.jpg", "Ao clicar no próximo na imagem 4, a imagem 1 deveria carregar novamente")
+  document.querySelector("img").getAttribute("src").should.eql("https://images.agoramedia.com/everydayhealth/cms/looking-at-cute-pics-helps-you-work-article.jpg", "Ao clicar no botão próximo na imagem 4, a imagem 1 deveria carregar novamente")
   
   _dispatch_("click", document.querySelector("button#anterior"))
   
