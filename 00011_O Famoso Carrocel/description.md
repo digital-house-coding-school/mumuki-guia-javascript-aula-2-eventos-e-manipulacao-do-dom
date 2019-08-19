@@ -1,5 +1,5 @@
 Vamos construir um carrossel de fotos ... O que você acha?
-
+ 
 Como você pode ver, nosso código HTML tem uma tag `<img>` que mostra imagens e duas tags `<button>` para passar as imagens. Cada um desses botões tem um **id** correspondente para ser facilmente identificado.
 
 Não apenas isso, mas no código JS existe um array com 4 URLs com fotos e uma variável `index` que indica qual a foto está sendo exibida na posição 0.
